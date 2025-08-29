@@ -7,16 +7,18 @@
 body {
   margin-left: auto;
   margin-right: auto;
+  min-width: 0;
 }
 .logo {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
   height: 120px;
-  width: 300px;
+  width: 200px;
   font-weight: 700;
+  gap: 200px;
   /* color: cornflowerblue; */
   flex: 1;
   /* padding: 20px; */
@@ -24,14 +26,18 @@ body {
 
 .logo-image {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  transform: translateX(-90%);
   padding-left: 25px;
   min-width: 0;
 }
+.logo-text{
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
 .navbar {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
   /* gap: 40rem; */
   margin-left: auto;
@@ -68,6 +74,7 @@ body {
 .hero-left {
   font-size: 2.5rem;
   color: #57636c;
+  max-width:40%;
 }
 .animated-text {
   color: rgb(74, 101, 234);
