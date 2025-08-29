@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
 .logo {
   font-size: 2rem;
   display: flex;
@@ -33,7 +37,6 @@
   margin-left: auto;
   margin-right: auto;
   min-width: 0;
- 
 }
 
 .nav-link {
@@ -53,4 +56,41 @@
 }
 .nav-link:hover {
   font-weight: 500;
+}
+.hero-section {
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+.hero-left {
+  font-size: 2.5rem;
+  color: #57636c;
+}
+.animated-text {
+  color: rgb(74, 101, 234);
+  font-weight: 500;
+  width: 100%;
+  animation: cursorAnimation 3s linear 1s infinite;
+}
+.animated-text::after {
+  content: "|";
+  color: black;
+  font-weight: 400;
+}
+@keyframes cursorAnimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.my-intro {
+  font-size: 1rem;
 }
