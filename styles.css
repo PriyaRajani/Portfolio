@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Be Vietnam Pro";
+  scroll-behavior: smooth;
 }
 body {
   margin-left: auto;
   margin-right: auto;
   min-width: 0;
 }
+/* navbar starts here */
 .logo {
   font-size: 2rem;
   display: flex;
@@ -58,8 +61,9 @@ body {
   }
 }
 .nav-link:hover {
-  font-weight: 500;
+  font-weight: 700;
 }
+/* hero section starts here */
 .hero-section {
   min-width: 0;
   margin-left: auto;
@@ -68,7 +72,6 @@ body {
   justify-content: space-around;
   margin-top: 2.5rem;
 }
-
 
 .hero-left {
   font-size: 2.5rem;
@@ -94,12 +97,12 @@ body {
   flex-direction: column;
   gap: 2.5rem;
 }
-@media screen and (max-width:1280px){
-  .hero-section{
+@media screen and (max-width: 1280px) {
+  .hero-section {
     flex-direction: column;
     justify-content: center;
   }
-  .hero-left{
+  .hero-left {
     max-width: 60%;
     text-align: center;
   }
@@ -163,8 +166,8 @@ body {
   }
 }
 
-@media screen and (max-width:1280px){
-  .btn{
+@media screen and (max-width: 1280px) {
+  .btn {
     transform: translateY(500px);
     transition: transform 0.5s ease-in;
     margin-left: auto;
@@ -204,7 +207,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
   }
 }
-.user-img-parent{
+.user-img-parent {
   max-width: 300px;
   max-height: 300px;
   min-width: 0;
@@ -332,4 +335,73 @@ body {
   }
 }
 
+/* projects section starts here */
 
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+  position: relative;
+  background-color: #eceedf;
+  width: 100%;
+  min-width: 0;
+}
+.gray-text {
+  color: #c9c9af;
+  position: absolute;
+  font-size: 6rem;
+  top: 0;
+  left: 40px;
+  transform: translateY(-6.5rem);
+  font-weight: 500;
+}
+
+.projects-heading {
+  font-size: 6rem;
+  color: rgb(245, 66, 66);
+  font-weight: 500;
+}
+.slide {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
+  max-width: 70%;
+  max-height: 35.5rem;
+  overflow: hidden;
+  margin-top: 3rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 15px;
+  overflow: hidden;
+  position: relative;
+}
+#slide-1 {
+  float: left;
+  margin-left: 5rem;
+}
+#slide-2 {
+  float: right;
+  margin-right: 5rem;
+}
+#slide-3 {
+  float: left;
+  margin-left: 5rem;
+}
+#slide-4 {
+  float: right;
+  margin-right: 5rem;
+}
+.overlay-content {
+  width: 100%;
+  height: 100%;
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 0;
+}
