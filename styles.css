@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,6 +24,10 @@ body {
   font-weight: 700;
   gap: 200px;
   flex: 1;
+}
+
+/* ToDo:- rename logo containing div */
+.logo-container {
 }
 
 .logo-image {
@@ -61,8 +66,9 @@ body {
   }
 }
 .nav-link:hover {
-  font-weight: 700;
+  font-weight: 400;
 }
+
 /* hero section starts here */
 .hero-section {
   min-width: 0;
@@ -87,16 +93,19 @@ body {
   margin-right: auto;
   text-align: left;
 }
+
 .hero-left-upper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
 .hero-left-down {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
+
 @media screen and (max-width: 1280px) {
   .hero-section {
     flex-direction: column;
@@ -107,16 +116,19 @@ body {
     text-align: center;
   }
 }
+
 .animated-text {
   color: rgb(74, 101, 234);
   font-weight: 500;
   display: inline-block;
 }
+
 .animated-text::after {
   content: "|";
   color: black;
   font-weight: 400;
 }
+
 @keyframes cursorAnimation {
   0% {
     width: 0%;
@@ -128,9 +140,11 @@ body {
     width: 0%;
   }
 }
-.my-intro {
+
+.about-user {
   font-size: 1rem;
 }
+
 .btn {
   background-color: rgb(245, 66, 66);
   color: white;
