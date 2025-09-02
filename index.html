@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -45,11 +38,11 @@
           </p>
         </div>
         <div class="hero-left-down">
-          <p class="about-user">
+          <p class="my-intro">
             I’m a software developer and here is my portfolio website. Here
             you’ll learn about my journey as a software developer.
           </p>
-          <button type="button" class="btn hire-me-btn">Hire me</button>
+          <button type="button" class="btn">Hire me</button>
         </div>
       </section>
       <section class="hero-right">
@@ -73,11 +66,11 @@
       </section>
     </section>
 
-    <section class="projects-section">
+    <div class="projects-section">
       <h3 class="gray-text">Priya Rajani</h3>
       <h3 class="projects-heading">Projects</h3>
-      <div class="projects">
-        <div id="slide-1" class="slide slide-left">
+      <div class="slides">
+        <div id="slide-1" class="slide">
           <img
             src="./assets/Project1.png"
             alt="slide-1"
@@ -85,74 +78,17 @@
             height="100%"
             style="object-fit: cover"
           />
-          <div class="project-content-container">
-            <div class="project-content project-content-slide-1">
-              <div class="skill-icon-container icon-container-slide-1">
-                <img
-                  src="./assets/icon/HTML.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets//icon/CSS.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Javascript.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Express.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="/assets/icon/NextJsCircle.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="/assets/icon/Tailwind.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/NodeJs.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/MongoDB.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Redux.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Vercel.svg"
-                  alt="icon"
-                  class="skill-icon"
-                  style="background-color: white"
-                />
-              </div>
-              <h3 class="slide-heading">Tint & Orange</h3>
-              <p class="slide-description slide-description-1">
-                Its is a car modification copany which provide you sheets to
-                protect your car from scratch
-              </p>
-              <button type="button" class="btn read-more-btn">Read More</button>
-              <i class="fa-brands fa-github git-icon"></i>
-              <i class="fa-solid fa-link link-icon"></i>
-            </div>
+          <div class="overlay-content">
+            
+            <h3>Tint & Orange</h3>
+            <p>
+              Its is a car modification copany which provide you sheets to
+              protect your car from scratch
+            </p>
+            <button type="button" class="readmore-btn">Read More</button>
           </div>
         </div>
-
-        <div id="slide-2" class="slide slide-right">
+        <div id="slide-2" class="slide">
           <img
             src="./assets/Project2.png"
             alt="slide-1"
@@ -160,59 +96,8 @@
             height="100%"
             style="object-fit: cover"
           />
-          <div class="project-content-container">
-            <div class="project-content project-content-slide-2">
-              <div class="skill-icon-container icon-container-slide-2">
-                <img
-                  src="./assets/icon/HTML.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets//icon/CSS.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Javascript.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-
-                <img
-                  src="/assets/icon/NextJsCircle.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="/assets/icon/Tailwind.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-
-                <img
-                  src="./assets/icon/Redux.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Vercel.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-              </div>
-              <h3 class="slide-heading">Breaking Copyrights</h3>
-              <p class="slide-description slide-description-2">
-                A platform to download copyrights free youtube music
-              </p>
-              <button type="button" class="btn read-more-btn">Read More</button>
-              <i class="fa-brands fa-github git-icon"></i>
-              <i class="fa-solid fa-link link-icon"></i>
-            </div>
-          </div>
         </div>
-
-        <div id="slide-3" class="slide slide-left">
+        <div id="slide-3" class="slide">
           <img
             src="./assets/Project3.png"
             alt="slide-1"
@@ -220,54 +105,8 @@
             height="100%"
             style="object-fit: cover"
           />
-          <div class="project-content-container">
-            <div class="project-content project-content-slide-3">
-              <div class="skill-icon-container icon-container-slide-3">
-                <img
-                  src="./assets/icon/HTML.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets//icon/CSS.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Javascript.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="/assets/icon/NextJsCircle.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="/assets/icon/Tailwind.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Vercel.svg"
-                  alt="icon"
-                  class="skill-icon"
-                  style="background-color: white"
-                />
-              </div>
-              <h3 class="slide-heading">Isha Tattva</h3>
-              <p class="slide-description slide-description-3">
-                A Website for interior designer to showcase her works and
-                samples
-              </p>
-              <button type="button" class="btn read-more-btn">Read More</button>
-              <i class="fa-brands fa-github git-icon"></i>
-              <i class="fa-solid fa-link link-icon"></i>
-            </div>
-          </div>
         </div>
-
-        <div id="slide-4" class="slide slide-right">
+        <div id="slide-4" class="slide">
           <img
             src="./assets/Project4.png"
             alt="slide-1"
@@ -275,37 +114,8 @@
             height="100%"
             style="object-fit: cover"
           />
-          <div class="project-content-container">
-            <div class="project-content project-content-slide-4">
-              <div class="skill-icon-container icon-container-slide-4">
-                <img
-                  src="/assets/icon/NextJsCircle.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="/assets/icon/Tailwind.png"
-                  alt="icon"
-                  class="skill-icon"
-                />
-                <img
-                  src="./assets/icon/Vercel.svg"
-                  alt="icon"
-                  class="skill-icon"
-                />
-              </div>
-              <h3 class="slide-heading">Granit</h3>
-              <p class="slide-description slide-description-4">
-                A architectural website to plan your building or home (Hebrew
-                Language)
-              </p>
-              <button type="button" class="btn read-more-btn">Read More</button>
-              <i class="fa-brands fa-github git-icon"></i>
-              <i class="fa-solid fa-link link-icon"></i>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>

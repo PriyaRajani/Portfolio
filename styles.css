@@ -7,7 +7,6 @@
   font-family: "Be Vietnam Pro";
   scroll-behavior: smooth;
 }
-
 body {
   margin-left: auto;
   margin-right: auto;
@@ -28,8 +27,8 @@ body {
 }
 
 /* ToDo:- rename logo containing div */
-/* .logo-container {
-} */
+.logo-container {
+}
 
 .logo-image {
   position: absolute;
@@ -149,17 +148,15 @@ body {
 .btn {
   background-color: rgb(245, 66, 66);
   color: white;
+  height: 50px;
+  width: 150px;
   font-size: 1.25rem;
+  border: 3px solid rgb(245, 66, 66);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.3s ease-in;
   position: relative;
   z-index: 100;
   cursor: pointer;
-}
-.hire-me-btn {
-  height: 50px;
-  width: 150px;
-  border: 3px solid rgb(245, 66, 66);
 }
 
 .btn::after {
@@ -184,7 +181,7 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
-  .hire-me-btn {
+  .btn {
     transform: translateY(500px);
     transition: transform 0.5s ease-in;
     margin-left: auto;
@@ -384,155 +381,41 @@ body {
   font-weight: 500;
 }
 .slide {
+  margin-left: auto;
+  margin-right: auto;
   min-width: 0;
   max-width: 70%;
   max-height: 35.5rem;
+  overflow: hidden;
   margin-top: 3rem;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* box-shadow: rgba(0, 0, 0, 0.5) 2px 8px 15px; */
-  /* overflow: hidden; */
+  box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 15px;
+  overflow: hidden;
   position: relative;
 }
-
-.slide-left {
+#slide-1 {
   float: left;
   margin-left: 5rem;
 }
-.slide-right {
+#slide-2 {
   float: right;
-  margin-right: 12rem;
-  font-weight: 700;
+  margin-right: 5rem;
 }
-
-#slide-1::before {
-  content: "01";
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 12rem;
-  transform: translate(3rem, -1rem);
-  color: white;
-  font-weight: 800;
-  display: none;
+#slide-3 {
+  float: left;
+  margin-left: 5rem;
 }
-#slide-1:hover {
-  &::before {
-    z-index: 50;
-    display: block;
-  }
+#slide-4 {
+  float: right;
+  margin-right: 5rem;
 }
-
-.slide::after {
-  content: "";
-  width: 0%;
+.overlay-content {
+  width: 100%;
   height: 100%;
+  color: aliceblue;
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  background: linear-gradient(
-    45deg,
-    rgb(52, 61, 104),
-    rgba(52, 61, 104, 0.745),
-    rgba(52, 61, 104, 0.486)
-  );
-  z-index: 20;
-}
-
-.project-content-container {
-  position: absolute;
-  background-color: #1f1f1f9a;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-content {
-  position: absolute;
-  border: 1px solid red;
-  top: 15%;
-  left: 10%;
-  display: flex;
-  flex-direction: column;
-  color: aliceblue;
-  min-width: 0;
-  overflow: hidden;
-  min-width: 0;
-  z-index: 100;
-  transition: all 0.3s ease-in-out;
-  padding: 2em;
-}
-
-.slide:hover {
-  &::after {
-    width: 100%;
-  }
-  .project-content {
-    scale: 1.1;
-  }
-}
-
-.skill-icon-container {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  max-width: 60%;
-  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
   min-width: 0;
 }
-
-.skill-icon {
-  height: 40px;
-  width: 40px;
-  min-width: 0;
-}
-.slide-heading {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  min-width: 0;
-}
-
-.slide-description {
-  font-style: italic;
-  max-width: 70%;
-  margin-bottom: 15px;
-  min-width: 0;
-}
-
-.read-more-btn {
-  height: 50px;
-  width: 180px;
-  border: 0;
-  min-width: 0;
-}
-.project-link {
-  max-height: 50px;
-  max-width: 50px;
-  min-width: 0;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  background-color: transparent;
-  min-width: 0;
-}
-.link-icon,
-.git-icon {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 2rem;
-  min-width: 0;
-}
-
-.link-icon:hover,
-.git-icon:hover {
-  color: rgb(245, 66, 66);
-}
-
-
