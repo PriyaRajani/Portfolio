@@ -478,7 +478,7 @@ body {
   }
 }
 
-.skill-icon-container {
+.tech-icon-container {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -487,7 +487,7 @@ body {
   min-width: 0;
 }
 
-.skill-icon {
+.tech-icon {
   height: 40px;
   width: 40px;
   min-width: 0;
@@ -521,8 +521,7 @@ body {
   background-color: transparent;
   min-width: 0;
 }
-.link-icon,
-.git-icon {
+.ref-icon {
   color: white;
   background-color: transparent;
   text-decoration: none;
@@ -530,7 +529,6 @@ body {
   min-width: 0;
 }
 
-.link-icon:hover,
-.git-icon:hover {
+.ref-icon:hover {
   color: rgb(245, 66, 66);
 }
